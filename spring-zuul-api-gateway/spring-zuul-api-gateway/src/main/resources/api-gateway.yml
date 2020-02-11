@@ -1,0 +1,7 @@
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    port: 8765
+    location: http://${eureka.instance.hostname}:${eureka.server.port}/eureka
+  

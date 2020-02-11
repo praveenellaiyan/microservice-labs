@@ -1,0 +1,14 @@
+server:
+  port: 8766
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${eureka.server.location}
+
+zuul:
+  routes:
+    prefix: /app/movies
+    client-app: 
+      path: /**
+      serviceId: config-client-practice

@@ -1,0 +1,14 @@
+server:
+  port: 8766
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${eureka.server.location}
+
+zuul:
+  routes:
+    prefix: /movies
+    movie: 
+      path: /**
+      serviceId: movie-service
