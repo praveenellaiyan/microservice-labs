@@ -6,4 +6,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/praveenellaiyan/microservice-labs/spring-cloud-config-props
+          uri: https://github.com/praveenellaiyan/microservice-labs
+          searchPaths: spring-cloud-config-props
+          skipSslValidation: true
+          clone-on-start: true
+      label: master          
