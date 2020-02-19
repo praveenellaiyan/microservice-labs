@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.praveenellaiyan.myapplication.model.Movie;
 
-@FeignClient(name = "${movies.client}", decode404 = true)
+@FeignClient(name = "${movies.gateway}", decode404 = true)
 public interface MovieClient {
 	
 	@RequestMapping(path = "${movies.all}", method = RequestMethod.GET)

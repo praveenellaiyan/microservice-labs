@@ -2,9 +2,10 @@ server:
   port: 8081
 
 movies:
-  client: ${movies.client}
+  gateway: ${movies.gateway}
   all: ${movies.all}
   search: ${movies.search}
+  
           
 eureka:
   client:

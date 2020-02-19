@@ -14,7 +14,6 @@ import com.praveenellaiyan.myapplication.model.Movie;
 import lombok.extern.java.Log;
 
 @RestController
-@RequestMapping("/app")
 @Log
 public class ClientApplication {
 
