@@ -6,6 +6,6 @@ eureka:
     location: http://${eureka.instance.hostname}:${eureka.server.port}/eureka
 
 movies:
-  client: 'movie-service'
+  gateway: 'api-gateway'
   all: '/movies/all'
   search: '/movies/search'
