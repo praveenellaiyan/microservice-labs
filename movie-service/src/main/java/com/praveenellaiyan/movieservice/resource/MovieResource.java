@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.BiPredicate;
 
-import javax.ws.rs.core.Context;
-
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,9 +20,6 @@ import lombok.extern.java.Log;
 @RequestMapping("/movies")
 @Log
 public class MovieResource {
-	
-	@Context
-	HttpHeaders headers;
 	
 	BiPredicate<String, String> movieP = (m1, m2) -> m1.equalsIgnoreCase(m2);
 

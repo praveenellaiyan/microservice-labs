@@ -5,3 +5,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${eureka.server.location}
+      
+logging:
+  file:
+    name: D:/Github/Git/microservice-labs/app-data/logs/ms-movie-service.log
