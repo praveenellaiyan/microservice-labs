@@ -8,7 +8,7 @@ eureka:
 
 zuul:
   routes:
-    prefix: /app/movies
-    client-app: 
+    prefix: /movies
+    movie-resource:
       path: /**
-      serviceId: config-client-practice
+      serviceId: movie-service
